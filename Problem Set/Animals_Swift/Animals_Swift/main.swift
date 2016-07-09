@@ -23,9 +23,16 @@ let myApartment = Apartment(animals:[sinatra, cary, snoopy])
 let randomNumber = Int(arc4random_uniform(3))
 let farmAnimal = myFarm.animals![randomNumber]
 let cityAnimal = myApartment.animals![randomNumber]
-farmAnimal.scurry()
-cityAnimal.deliverMessage()
 
+//farmAnimal.scurry()
+if let rat = farmAnimal as? Rat {
+    rat.scurry()
+}
+
+//cityAnimal.deliverMessage()
+if let pigeon = cityAnimal as? Pigeon {
+    pigeon.deliverMessage()
+}
 
 
 
