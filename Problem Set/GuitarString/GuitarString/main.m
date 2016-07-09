@@ -21,11 +21,11 @@ int main(int argc, const char * argv[]) {
         // c. Call the method pluck(velocity: Float)
 //        gs.outOfTune = YES;
         gs.broken = YES;
-        [gs pluck:0.7 error:&error];
+        BOOL success = [gs pluck:0.8 error:&error];
         
         // d. Check if an error was returned
         // e. Log an error if one was returned
-        if (error != nil) {
+        if (!success) {
             NSLog(@"%@", error);
         }
     }
