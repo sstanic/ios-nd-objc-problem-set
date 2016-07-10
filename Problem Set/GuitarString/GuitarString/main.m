@@ -19,9 +19,14 @@ int main(int argc, const char * argv[]) {
         NSError *error = nil;
         
         // c. Call the method pluck(velocity: Float)
+        
+        // ==> change the (un-)commented lines to test the different cases
+        
 //        gs.outOfTune = YES;
         gs.broken = YES;
         BOOL success = [gs pluck:0.8 error:&error];
+        
+        // <== change the (un-)commented lines to test the different cases
         
         // d. Check if an error was returned
         // e. Log an error if one was returned

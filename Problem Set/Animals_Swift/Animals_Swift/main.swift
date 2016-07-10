@@ -35,4 +35,4 @@ if let pigeon = cityAnimal as? Pigeon {
 }
 
 
-
+//this can be repeated for all the animals on the farm according to the if-let-x=yAnimal-pattern

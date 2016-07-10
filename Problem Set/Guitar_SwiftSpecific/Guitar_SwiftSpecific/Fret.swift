@@ -8,6 +8,6 @@
 
 import Cocoa
 
-class Fret {
+class Fret: NSObject {
 
 }

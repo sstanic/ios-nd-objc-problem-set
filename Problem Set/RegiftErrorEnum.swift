@@ -19,3 +19,5 @@ import Foundation
     
     case DestinationNotFound, AddFrameToDestination, DestinationFinalize
 }
+
+// (according to https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6-ID61)

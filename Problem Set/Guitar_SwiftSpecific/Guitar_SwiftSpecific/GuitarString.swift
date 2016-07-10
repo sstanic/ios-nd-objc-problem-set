@@ -9,7 +9,7 @@
 import Cocoa
 
 
-enum Error: ErrorType {
+@objc public enum Error: Int, ErrorType {
     case Broken
     case OutOfTune
 }
